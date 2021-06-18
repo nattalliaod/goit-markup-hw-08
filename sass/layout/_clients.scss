@@ -1,0 +1,35 @@
+// .clients {
+//   display: flex;
+//   cursor: pointer;
+// }
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link {
+  @extend %vertical-align;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--social-link-color);
+  border-radius: 4px;
+
+  transition: border-color 250ms var(--timing-funktion);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.clients__logo {
+  fill: var(--social-link-color);
+
+  transition: fill 250ms var(--timing-funktion);
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: var(--accent-color);
+  }
+}

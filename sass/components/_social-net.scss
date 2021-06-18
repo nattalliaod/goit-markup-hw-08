@@ -1,0 +1,33 @@
+.social-net {
+  @extend %vertical-align;
+}
+
+.social-net__social-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-net__icon-link {
+  @extend %vertical-align;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+
+  transition: background-color 250ms var(--timing-funktion);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.social-net__icon {
+  fill: var(--social-link-color);
+
+  transition: fill 250ms var(--timing-funktion);
+
+  .social-net__icon-link:hover &,
+  .social-net__icon-link:focus & {
+    fill: var(--white-text-color);
+  }
+}

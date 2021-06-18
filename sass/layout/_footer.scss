@@ -1,0 +1,105 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--second-background-color);
+}
+
+// .footer__container {
+//   display: flex;
+//   align-items: baseline;
+// }
+
+.contacts-nav {
+  width: 230px;
+  margin-right: 70px;
+}
+
+.contacts-nav__logo-title {
+  color: var(--white-text-color);
+}
+
+.contacts-nav__address {
+  margin-top: 20px;
+}
+
+.contacts-nav__item {
+  font-style: normal;
+  font-size: $primaryFontSize;
+  line-height: 1.7;
+
+  &:nth-last-child(-n + 2) {
+    display: block;
+    margin-top: 9px;
+  }
+}
+
+.contacts-nav__location {
+  color: var(--white-text-color);
+  transition: color 250ms var(--timing-funktion);
+}
+
+.contacts-nav__contact {
+  color: var(--contact-footer-color);
+  transition: color 250ms var(--timing-funktion);
+}
+
+.container-social {
+  margin-right: 93px;
+}
+
+.container-social__text {
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: $primaryFontSize;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.social-net__icon_default {
+  fill: var(--white-text-color);
+}
+
+.social-net__icon-link {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms var(--timing-funktion);
+}
+
+.subscription-form__text {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: $primaryFontSize;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+// .subscription-form__input {
+//   width: 358px;
+//   height: 50px;
+//   padding: 0;
+//   padding-left: 16px;
+//   margin-right: 8px;
+
+//   background-color: var(--second-background-color);
+//   border: 1px solid rgba(255, 255, 255, 0.3);
+//   border-radius: 4px;
+
+//   &:focus {
+//     color: var(--white-text-color);
+//   }
+// }
+
+.subscription-form__btn {
+  position: relative;
+  text-align: start;
+}
+
+.subscription-form__icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+}

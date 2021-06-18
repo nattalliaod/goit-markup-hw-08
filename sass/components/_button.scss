@@ -1,0 +1,29 @@
+.button {
+  border: none;
+  border-radius: 4px;
+
+  background-color: var(--min-background-color);
+  cursor: pointer;
+
+  transition: background-color 250ms var(--timing-funktion),
+    box-shadow 250ms var(--timing-funktion);
+}
+
+.primary__btn {
+  min-width: 200px;
+  padding: 10px 30px;
+
+  font-weight: 700;
+  font-size: $titleFontSize;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  box-shadow: var(--color-shadow-btn);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hover-bg);
+  }
+}

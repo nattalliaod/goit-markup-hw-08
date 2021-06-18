@@ -1,0 +1,38 @@
+:root {
+  --primary-text-color: #212121;
+  --text-color: #757575;
+  --white-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --contact-footer-color: rgba(255, 255, 255, 0.6);
+  --text-logo: #000000;
+
+  --primary-background-color: #ffffff;
+  --second-background-color: #2f303a;
+  --min-background-color: #f5f4fa;
+  --btn-hover-bg: #188ce8;
+
+  --social-link-color: #afb1b8;
+  --header-border: #ececec;
+  --card-border: #eeeeee;
+  --color-shadow-first: rgba(0, 0, 0, 0.12);
+  --color-shadow-second: rgba(0, 0, 0, 0.14);
+  --color-shadow-third: rgba(0, 0, 0, 0.2);
+  --color-shadow-btn: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  --item-card-gap: 30px;
+
+  --timing-funktion: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+$whiteTextColor: #ffffff;
+
+$primaryFontFamily: "Roboto", sans-serif;
+$logoFontFamily: "Raleway", sans-serif;
+
+$primaryFontSize: 14px;
+$titleFontSize: 16px;
+$primaryTitleFontSize: 36px;
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
