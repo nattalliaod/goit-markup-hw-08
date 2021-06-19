@@ -1,19 +1,18 @@
-// .clients {
-//   display: flex;
-//   cursor: pointer;
-// }
+.clients__title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.18;
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+  letter-spacing: 0.03em;
 }
 
 .clients__link {
   @extend %vertical-align;
   align-items: center;
-  width: 170px;
   height: 92px;
   border: 1px solid var(--social-link-color);
   border-radius: 4px;
+  cursor: pointer;
 
   transition: border-color 250ms var(--timing-funktion);
 
@@ -31,5 +30,30 @@
   .clients__link:hover &,
   .clients__link:focus & {
     fill: var(--accent-color);
+  }
+}
+
+.clients__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+  .clients__list {
+    grid-template-columns: repeat(7, 170px);
   }
 }

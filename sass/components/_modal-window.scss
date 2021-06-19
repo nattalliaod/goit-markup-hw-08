@@ -1,20 +1,30 @@
 .modal {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 610px;
+  width: 450px;
   padding: 40px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
-  @media screen and (min-width: 528px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms var(--timing-funktion);
-  }
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms var(--timing-funktion);
 }
+// @media screen and (max-width: 1199px) {
+//   .modal {
+//     max-height: 610px;
+//     max-width: 450px;
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .modal {
+//     max-height: 580px;
+//     max-width: 528px;
+//   }
+// }
 .icon-close {
   position: absolute;
   top: 8px;

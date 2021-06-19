@@ -1,0 +1,117 @@
+@media screen and (max-width: 767px) {
+  .menu-mobail__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 100;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    background-color: $primary-background-color;
+
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+
+  .mobile-menu__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .mobile-menu__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    color: $text-logo;
+  }
+
+  .mobile-menu__nav {
+    margin-bottom: 302px;
+  }
+
+  .mobile-menu__contact-item:first-child {
+    margin-bottom: 32px;
+  }
+  .mobile-menu__contact-link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+
+    color: $text-color;
+  }
+
+  .mobile-menu__contact-list {
+    margin-bottom: 64px;
+  }
+
+  .mobile-menu__social {
+    display: flex;
+  }
+
+  .mobile-menu__social-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 12.2;
+
+    letter-spacing: 0.02em;
+    color: $accent-color;
+  }
+
+  .mobile-menu__social {
+    position: relative;
+  }
+
+  .mobile-menu__social-item::after {
+    display: block;
+    position: absolute;
+    left: 10px;
+    content: "";
+    height: 18px;
+
+    // margin-left: 10px;
+    // margin-right: 10px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  .menu-mobail__content {
+    position: relative;
+    padding: 48px 40px;
+  }
+
+  .menu-mobail__btn-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: block;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .menu-mobail__btn-close:hover .menu-mobail__icon-close {
+    fill: $accent-color;
+  }
+
+  .mobile-menu__link_current {
+    color: $accent-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-mobail__container {
+    opacity: 0;
+    display: none;
+    position: absolute;
+    visibility: visible;
+  }
+}
