@@ -1,18 +1,5 @@
-.site-nav__navigation-list {
-  display: none;
-}
-
-.site-nav__tab {
-  display: none;
-}
-
-.site-nav__contact {
-  display: none;
-}
-
 .header {
   border-bottom: 1px solid var(--header-border);
-  position: relative;
 }
 
 .logo__title {
@@ -25,17 +12,25 @@
 }
 
 @media screen and (max-width: 767px) {
+  .site-nav__navigation-list {
+    display: none;
+  }
+
+  .site-nav__list-desk {
+    display: none;
+  }
   .menu-mobail {
     display: flex;
+
     align-items: center;
 
     min-height: 60px;
   }
 
+  .logo-mob {
+    margin-right: 276px;
+  }
   .menu-mobail__btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
     display: block;
     padding: 10px;
     border: none;
@@ -46,28 +41,23 @@
     fill: $accent-color;
   }
 }
+@media screen and (max-width: 767px) {
+}
 
 @media screen and (min-width: 768px) {
   .menu-mobail__btn {
     display: none;
   }
 
-  .site-nav__navigation-list {
-    display: block;
+  .site-nav-tab {
+    display: flex;
+    align-items: center;
   }
 
-  .site-nav__tab {
-    display: block;
-  }
   .site-nav__navigation-list {
     display: flex;
     justify-content: space-between;
     margin-left: 88px;
-  }
-
-  .site-nav-tab {
-    display: flex;
-    align-items: center;
   }
 
   .site-nav__text {
@@ -104,6 +94,13 @@
     }
   }
 
+  // .site-nav__list-tablet {
+  //   display: block;
+  // }
+  .site-nav__communication:first-child {
+    display: block;
+    margin-bottom: 10px;
+  }
   .site-nav__item:not(:last-child) {
     margin-right: 50px;
   }
@@ -136,21 +133,28 @@
     align-items: center;
   }
 
-  .site-nav__communication:first-child {
-    margin-right: 30px;
+  .site-nav {
+    display: flex;
+    align-items: flex-start;
   }
 
   .site-nav__icon {
     margin-right: 10px;
     fill: currentColor;
   }
-}
 
-.site-nav {
-  display: flex;
-  align-items: flex-end;
-}
+  .site-nav__communication:first-child {
+    margin-bottom: 0;
+  }
+  .site-nav__communication {
+    margin-bottom: 0;
+  }
 
-.site-nav__communication {
-  margin-bottom: 0;
+  .site-nav__communication:first-child {
+    margin-right: 30px;
+  }
+
+  .site-nav__navigation-list {
+    margin-right: 304px;
+  }
 }
