@@ -514,11 +514,9 @@ img {
   }
   .menu-mobail {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     min-height: 60px;
-  }
-  .logo-mob {
-    margin-right: 276px;
   }
   .menu-mobail__btn {
     display: block;
@@ -656,6 +654,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
     min-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -723,7 +722,7 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
@@ -737,7 +736,7 @@ img {
   }
 }
 
-@media (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .advantages {
     padding-bottom: 47px;
   }
