@@ -1,9 +1,9 @@
 .modal-form-title {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.15;
-  text-align: center;
+
 }
 
 .modal-form-field {
@@ -159,4 +159,14 @@
 .modal-close-btn:focus,
 .modal-close-btn:hover {
   outline: none;
+}
+
+@media screen and (min-width: 480px) {
+
+  .modal-form-title {
+  margin-bottom: 12px;
+  font-size: 20px;
+  text-align: center;
+}
+
 }

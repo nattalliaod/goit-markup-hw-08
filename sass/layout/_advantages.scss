@@ -34,7 +34,7 @@
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
@@ -54,10 +54,19 @@
   }
 
   .advantages__list {
-    flex-wrap: nowrap;
+    display: flex;
+  }
+
+  .advantages__title {
+    text-align: left;
+  }
+
+  .advantages__item {
+   max-width: 270px;
   }
 
   .advantages__item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
