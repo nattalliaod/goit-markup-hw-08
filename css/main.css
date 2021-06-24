@@ -144,10 +144,6 @@ img {
   margin-bottom: 22px;
 }
 
-.mobile-menu__nav {
-  margin-bottom: 150px;
-}
-
 .site-nav-tab {
   position: relative;
 }
@@ -981,6 +977,7 @@ img {
   }
   .clients__list {
     grid-template-columns: repeat(7, 170px);
+    grid-template-rows: 1fr;
   }
 }
 

@@ -55,5 +55,6 @@
   }
   .clients__list {
     grid-template-columns: repeat(7, 170px);
+    grid-template-rows: 1fr;
   }
 }
